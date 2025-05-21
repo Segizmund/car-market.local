@@ -99,14 +99,14 @@ const ImageSlider = ({ slides }) => {
                     {duplicatedSlides.map((slide, index) => (
                         <a
                             key={index}
-                            className="min-w-full h-full"
+                            className="min-w-full max-h-[400px] block overflow-hidden"
                             style={{ width: `${containerWidth}px` }}
                             href={slide.url}
                         >
                             <img
                                 src={slide.image}
                                 alt="travel image"
-                                className="w-full h-full object-cover"
+                                className="object-fill max-h-[400px] w-full"
                             />
                         </a>
                     ))}

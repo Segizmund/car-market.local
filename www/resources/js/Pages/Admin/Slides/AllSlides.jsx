@@ -3,7 +3,6 @@ import {Head, Link, useForm, usePage} from '@inertiajs/react';
 export default function AllUsers({slides}) {
     const { flash } = usePage().props;
     const { delete: destroy} = useForm();
-    console.log(slides)
     setTimeout(() => {
         flash.message = null;
     },200);
